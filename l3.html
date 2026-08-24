@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>¿Desde qué nivel partes? · Calistenia en Albacete | PowerDoom</title>
+<meta name="description" content="Calcula tu nivel de calistenia en 30 segundos y ven a confirmarlo en una sesión de prueba. Grupos reducidos con entrenador en Albacete, para cualquier punto de partida.">
+<meta name="theme-color" content="#F4F0E9">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="¿Desde qué nivel partes? · Calistenia en Albacete">
+<meta property="og:description" content="Test de nivel en 30 segundos y sesión de prueba con diagnóstico real.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/bebasneue-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/l3.css">
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+
+<header class="nav" data-nav>
+  <div class="wrap nav__in">
+    <a class="logo" href="#top"><img src="assets/img/icon/powerdoom-head.webp" alt="" width="30" height="30" decoding="async"><span>POWER<b>DOOM</b></span></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#test">Test de nivel</a>
+      <a href="#niveles">Los 5 niveles</a>
+      <a href="#metodo">Método</a>
+      <a href="#casos">Casos</a>
+    </nav>
+    <a class="btn btn--red btn--sm nav__cta" href="#test">Calcular mi nivel</a>
+    <button class="burger" data-burger aria-label="Menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" data-menu hidden>
+  <a href="#test">Test de nivel</a><a href="#niveles">Los 5 niveles</a><a href="#metodo">Método</a><a href="#casos">Casos</a><a href="#prueba">Sesión de prueba</a><a href="#faq">Preguntas</a>
+  <a class="btn btn--red" data-wa="Hola 👋 Quiero hacer la sesión de prueba de calistenia y que valoréis mi nivel.">Reservar sesión de prueba</a>
+</div>
+
+<main id="top">
+
+<!-- HERO + TEST -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__txt">
+      <p class="tag">Calistenia · Albacete · Grupos reducidos</p>
+      <h1>No sabes si progresas<br>porque <em>nadie te ha dicho<br>dónde estás</em>.</h1>
+      <p class="hero__sub">Llevas tiempo entrenando a ojo: unas semanas bien, otras regular y ninguna referencia de si algo se mueve. Todo cambia cuando tienes un punto de partida medido y un siguiente paso concreto.</p>
+      <p class="hero__hi">Empieza por saber tu nivel. Tardas 30 segundos.</p>
+      <ul class="pills">
+        <li>Cualquier punto de partida</li><li>Sin experiencia previa</li><li>Con molestias también</li>
+      </ul>
+    </div>
+
+    <div class="test" id="test">
+      <div class="test__head">
+        <span class="mono">Test de nivel</span>
+        <span class="mono" id="t-step">1 / 3</span>
+      </div>
+
+      <form id="t-form">
+        <fieldset class="q is-on" data-q="1">
+          <legend>¿Puedes colgarte de una barra 20 segundos sin que te moleste nada?</legend>
+          <div class="opts">
+            <button type="button" data-v="0">No, o me molesta el hombro</button>
+            <button type="button" data-v="1">Aguanto, pero con esfuerzo</button>
+            <button type="button" data-v="2">Sin problema</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="q" data-q="2">
+          <legend>¿Cuántas dominadas estrictas haces hoy, sin impulso?</legend>
+          <div class="opts">
+            <button type="button" data-v="0">Ninguna</button>
+            <button type="button" data-v="1">Entre 1 y 3</button>
+            <button type="button" data-v="2">Entre 4 y 8</button>
+            <button type="button" data-v="3">Más de 8</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="q" data-q="3">
+          <legend>¿Y de esto, qué has hecho alguna vez?</legend>
+          <div class="opts">
+            <button type="button" data-v="0">Nada de lo de abajo</button>
+            <button type="button" data-v="1">Fondos en paralelas</button>
+            <button type="button" data-v="2">Dominadas con peso añadido</button>
+            <button type="button" data-v="3">Muscle-up (aunque sea con impulso)</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="res" id="t-res" hidden>
+        <p class="mono">Tu punto de partida estimado</p>
+        <p class="res__lvl" id="r-lvl">N1</p>
+        <h3 id="r-title">Suspensión y base</h3>
+        <p id="r-txt"></p>
+        <p class="res__next"><span class="mono">Siguiente hito</span><b id="r-next"></b></p>
+        <a class="btn btn--red btn--full" id="r-cta" href="#" target="_blank" rel="noopener">Confirmarlo en una sesión de prueba</a>
+        <button type="button" class="res__again" id="r-again">Repetir el test</button>
+        <p class="micro">Estimación orientativa. En la sesión de prueba se mide de verdad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ TE HAS ATASCADO -->
+<section class="sec sec--soft" id="atasco">
+  <div class="wrap">
+    <header class="head reveal">
+      <p class="kicker">Por qué te has atascado</p>
+      <h2>Entrenar sin referencia es <em>dar vueltas</em></h2>
+    </header>
+    <div class="grid4">
+      <article class="reveal"><span class="mono">01</span><h3>Repites lo mismo</h3><p>Los mismos ejercicios durante meses. El cuerpo se adapta en tres semanas y ahí se acaba el progreso.</p></article>
+      <article class="reveal"><span class="mono">02</span><h3>Saltas fases</h3><p>Ir a por la dominada sin sostener bien el hombro es la vía rápida a la molestia crónica y a la frustración.</p></article>
+      <article class="reveal"><span class="mono">03</span><h3>Nadie te mira</h3><p>En una sala llena, un pequeño detalle de colocación no lo corrige nadie. Y es justo ese detalle el que frena.</p></article>
+      <article class="reveal"><span class="mono">04</span><h3>No mides nada</h3><p>Sin registro no hay progreso: hay sensaciones. Y las sensaciones dependen de si has dormido bien.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- NIVELES -->
+<section class="sec" id="niveles">
+  <div class="wrap">
+    <header class="head reveal">
+      <p class="kicker">El mapa</p>
+      <h2>Cinco niveles, <em>criterios objetivos</em></h2>
+      <p class="lead">Nada de «iniciado» o «avanzado». O cumples el criterio o no lo cumples. Así sabes en todo momento dónde estás y qué falta.</p>
+    </header>
+    <div class="niveles">
+      <article class="nivel reveal"><div class="nivel__k">N1</div><div class="nivel__b"><h3>Suspensión y base</h3><p class="nivel__c"><b>Criterio:</b> colgarte 20 s sin molestias y controlar la escápula.</p><p>El punto de entrada más común. Aquí se construye el hombro que va a aguantar todo lo demás.</p></div></article>
+      <article class="nivel reveal"><div class="nivel__k">N2</div><div class="nivel__b"><h3>Tracción asistida</h3><p class="nivel__c"><b>Criterio:</b> dominadas con asistencia graduada y negativas controladas de 5 s.</p><p>El nivel en el que la primera dominada deja de ser una lotería y pasa a ser cuestión de semanas.</p></div></article>
+      <article class="nivel reveal"><div class="nivel__k">N3</div><div class="nivel__b"><h3>Dominada estricta</h3><p class="nivel__c"><b>Criterio:</b> de 1 a 5 dominadas limpias, sin impulso.</p><p>El momento que todo el mundo recuerda. Y el punto en el que la mayoría se queda si nadie le da el paso siguiente.</p></div></article>
+      <article class="nivel reveal"><div class="nivel__k">N4</div><div class="nivel__b"><h3>Fuerza y transición</h3><p class="nivel__c"><b>Criterio:</b> 8+ dominadas, fondos completos y tracción explosiva a esternón.</p><p>Se entrena el gesto de pasar por encima de la barra. Es la fase que decide si el muscle-up llega este año o nunca.</p></div></article>
+      <article class="nivel nivel--hi reveal"><div class="nivel__k">N5</div><div class="nivel__b"><h3>Muscle-up y habilidades</h3><p class="nivel__c"><b>Criterio:</b> muscle-up limpio y repetible.</p><p>A partir de aquí el juego cambia: lastres, nuevas habilidades y objetivos a medida.</p></div></article>
+    </div>
+    <div class="niveles__cta reveal">
+      <p>La mayoría de la gente que entra por la puerta está entre <b>N1 y N2</b>. Es un sitio perfectamente normal para empezar.</p>
+      <a class="btn btn--red" href="#test">Calcular mi nivel</a>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="sec sec--soft" id="metodo">
+  <div class="wrap">
+    <header class="head reveal">
+      <p class="kicker">Método</p>
+      <h2>Cómo se sube <em>de un nivel al siguiente</em></h2>
+    </header>
+    <div class="metodo">
+      <article class="reveal"><span class="mono">Paso 1</span><h3>Se mide antes de empezar</h3><p>Movilidad de hombro, control escapular, capacidad de tracción y de empuje. Un punto de partida escrito, no una impresión.</p></article>
+      <article class="reveal"><span class="mono">Paso 2</span><h3>El plan es tuyo, no del grupo</h3><p>En la misma sesión, dos personas pueden estar haciendo ejercicios distintos porque están en niveles distintos.</p></article>
+      <article class="reveal"><span class="mono">Paso 3</span><h3>Alguien te mira cada serie</h3><p>Grupos reducidos: el entrenador corrige en el momento, no al final de la clase. Ahí está la diferencia entre progresar y acumular horas.</p></article>
+      <article class="reveal"><span class="mono">Paso 4</span><h3>Se revisa cada pocas semanas</h3><p>Vuelves a pasar el criterio del nivel. Si se cumple, subes; si no, se ajusta el plan. Sin adivinar.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section class="sec" id="casos">
+  <div class="wrap">
+    <header class="head reveal">
+      <p class="kicker">Casos</p>
+      <h2>De dónde salieron y <em>dónde están</em></h2>
+    </header>
+
+    <!-- ▼▼ EDITA AQUÍ: casos reales ▼▼ -->
+    <div class="tabla">
+      <div class="tabla__h mono"><span>Perfil</span><span>Entró en</span><span>Está en</span><span>Tiempo</span></div>
+      <div class="fila reveal">
+        <div class="fila__p"><b>Javier</b><small>Enfermero con guardias · padre de dos</small></div>
+        <div><span class="k k--n1">N1</span></div>
+        <div><span class="k k--n5">N5</span><small>muscle-up</small></div>
+        <div class="mono">4 meses</div>
+      </div>
+      <div class="fila reveal">
+        <div class="fila__p"><b>Marta</b><small>Comercial · madre de dos · sin experiencia</small></div>
+        <div><span class="k k--n1">N1</span></div>
+        <div><span class="k k--n3">N3</span><small>4 dominadas</small></div>
+        <div class="mono">11 semanas</div>
+      </div>
+      <div class="fila reveal">
+        <div class="fila__p"><b>Fernando</b><small>Autónomo · hombro tocado desde hacía años</small></div>
+        <div><span class="k k--n1">N1</span></div>
+        <div><span class="k k--n4">N4</span><small>10 dominadas, sin dolor</small></div>
+        <div class="mono">8 meses</div>
+      </div>
+      <div class="fila reveal">
+        <div class="fila__p"><b>Nuria</b><small>Docente · venía de clases dirigidas</small></div>
+        <div><span class="k k--n2">N2</span></div>
+        <div><span class="k k--n4">N4</span><small>transición completa</small></div>
+        <div class="mono">6 meses</div>
+      </div>
+    </div>
+    <!-- ▲▲ FIN casos editables ▲▲ -->
+
+    <p class="micro reveal">Mismo punto de partida, plazos distintos. Depende del historial de cada uno y de cuántos días pueda venir, no de cuánto apriete un día suelto.</p>
+  </div>
+</section>
+
+<!-- SESIÓN DE PRUEBA -->
+<section class="sec sec--soft" id="prueba">
+  <div class="wrap wrap--n">
+    <header class="head head--c reveal">
+      <p class="kicker kicker--c">Sesión de prueba</p>
+      <h2>Una hora para saber <em>exactamente dónde estás</em></h2>
+      <p class="lead">Sin coste y sin compromiso. Se valora tu nivel real, entrenas una sesión completa y sales con el diagnóstico y el siguiente hito por escrito.</p>
+    </header>
+    <ol class="pasos">
+      <li class="reveal"><b>1</b><h3>Valoración</h3><p>Hombro, escápula, tracción, empuje y core. Diez minutos que explican por qué te has atascado.</p></li>
+      <li class="reveal"><b>2</b><h3>Entrenas</h3><p>Sesión real adaptada a lo que acabamos de ver. No es una visita guiada: es tu primer entrenamiento.</p></li>
+      <li class="reveal"><b>3</b><h3>Diagnóstico</h3><p>Tu nivel (N1-N5), qué falta para el siguiente y en cuánto tiempo es razonable conseguirlo.</p></li>
+    </ol>
+    <div class="cta-final reveal">
+      <a class="btn btn--red btn--lg" data-wa="Hola 👋 Quiero reservar la sesión de prueba de calistenia para que valoréis mi nivel. ¿Qué días tenéis?">Reservar mi sesión de prueba</a>
+      <p class="micro">Respuesta por WhatsApp normalmente en menos de 1 hora.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap wrap--n">
+    <header class="head reveal"><p class="kicker">Preguntas</p><h2>Dudas razonables</h2></header>
+    <div class="faq">
+      <details class="reveal"><summary>Parto de cero. ¿Voy a ser el peor de la sala?</summary><p>No existe «el peor»: cada uno entrena su nivel y su progresión. La mayoría entra en N1, así que estarás exactamente donde está casi todo el mundo al empezar.</p></details>
+      <details class="reveal"><summary>¿Cuánto se tarda en subir de nivel?</summary><p>De N1 a N3 lo normal son 2-4 meses entrenando dos o tres días por semana. De N3 a N5 depende mucho más del historial de cada uno. En la valoración te damos un plazo realista, no uno bonito.</p></details>
+      <details class="reveal"><summary>Tengo una lesión antigua de hombro.</summary><p>Se tiene en cuenta desde el minuto uno. El nivel N1 existe precisamente para reconstruir esa base antes de cargar nada.</p></details>
+      <details class="reveal"><summary>¿Hace falta venir muchos días?</summary><p>Con dos días bien planificados se progresa. Tres es el punto óptimo para la mayoría de la gente que trabaja.</p></details>
+      <details class="reveal"><summary>¿El test de arriba es fiable?</summary><p>Es una estimación para orientarte. El nivel real se mide en persona: hay cosas —control escapular, rango, compensaciones— que no se ven en tres preguntas.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="cierre">
+  <div class="wrap cierre__in reveal">
+    <h2>Deja de entrenar a ojo</h2>
+    <p>Una hora para tener por fin un punto de partida y un plan que dependa de él.</p>
+    <a class="btn btn--paper btn--lg" data-wa="Hola 👋 Quiero reservar la sesión de prueba para saber desde qué nivel parto.">Reservar sesión de prueba</a>
+    <p class="cierre__dir">C/ Julio Romero de Torres, 1123, 2º Garaje · Albacete</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo"><img src="assets/img/icon/powerdoom-head.webp" alt="PowerDoom" width="28" height="28" loading="lazy"><span>POWER<b>DOOM</b></span></span>
+    <p>Calistenia en Albacete · <span data-year>2026</span></p>
+    <p><a href="tel:+34626428569">+34 626 428 569</a> · <a href="https://www.instagram.com/powerdoom_albacete/" target="_blank" rel="noopener">@powerdoom_albacete</a></p>
+  </div>
+</footer>
+
+<a class="fab" data-wa="Hola 👋 Quiero reservar una sesión de prueba de calistenia." aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.11-.96-.29-1.65-.59-2.9-1.25-4.8-4.17-4.94-4.37-.15-.19-1.19-1.58-1.19-3.02s.76-2.14 1.03-2.44c.27-.29.59-.37.78-.37s.39 0 .56.01c.18.01.42-.07.66.5.24.58.82 2.01.9 2.16.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.7-.17 1.38Z"/></svg>
+  <span>Sesión de prueba</span>
+</a>
+
+<script src="js/common.js" defer></script>
+<script src="js/l3-test.js" defer></script>
+<script src="js/switch.js" defer></script>
+</body>
+</html>

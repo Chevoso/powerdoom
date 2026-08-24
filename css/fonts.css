@@ -1,0 +1,5 @@
+/* Fuentes autoalojadas compartidas por las tres landings */
+@font-face{font-family:'Bebas';src:url('../assets/fonts/bebasneue-400.woff2') format('woff2');font-weight:400;font-display:swap;font-style:normal}
+@font-face{font-family:'Barlow';src:url('../assets/fonts/barlow-400.woff2') format('woff2');font-weight:400;font-display:swap;font-style:normal}
+@font-face{font-family:'Barlow';src:url('../assets/fonts/barlow-600.woff2') format('woff2');font-weight:600;font-display:swap;font-style:normal}
+@font-face{font-family:'Barlow';src:url('../assets/fonts/barlow-800.woff2') format('woff2');font-weight:800;font-display:swap;font-style:normal}
