@@ -32,8 +32,13 @@ rojo de marca `#D62424`, Bebas + Barlow). Cambia el ángulo y el ritmo de la pá
 4. **Seis casos de éxito** en tarjetas-foto: marca grande, antes → ahora y cita que aparece al pasar el ratón.
 5. **Metodología** de calistenia en 6 pilares + bloque «lo que no vas a encontrar / lo que sí».
 
-⚠️ En la 4 quedan **placeholders entre corchetes** (`[X] años entrenando`) y el número de reseñas
-del badge del hero, marcados con comentarios `▼▼ EDITA AQUÍ`. Rellenarlos antes de publicar.
+Además, entre la sesión de prueba y las FAQ hay un **carrusel horizontal de reseñas a todo el ancho**
+(scroll con snap) con la nota media y el enlace a Google. Son **reseñas reales** de la ficha de
+Google (5,0 de 62). Ver «Actualizar las reseñas» más abajo.
+
+⚠️ En la 4 solo queda un placeholder: `[X] años entrenando` en la sección del entrenador. El enlace
+«Verlas todas en Google» apunta a una búsqueda genérica: conviene cambiarlo por la URL directa de
+la ficha. Las fotos siguen siendo de relleno (ver más abajo).
 
 **Nota sobre el avatar**: las tres están escritas para alguien de 30-50 años con trabajo y cargas
 familiares, pero **en ningún sitio se dice la edad**. Se transmite por contexto (guardias, hijos,
@@ -59,6 +64,8 @@ css/fonts.css         Fuentes autoalojadas (compartidas)
 css/l1.css l2.css l3.css l4.css
 js/common.js          WhatsApp declarativo, reveal, menú móvil, contadores
 js/l3-test.js         Lógica del test de nivel (landings 3 y 4)
+js/l4-resenas.js      Pinta el carrusel de reseñas de la landing 4 desde el JSON
+data/resenas.json     Reseñas de Google + nota media (editable a mano)
 js/switch.js          Selector flotante de versiones (TEMPORAL)
 assets/               Fotos, logo y fuentes
 old-generalista.html  Versión anterior (enfoque gimnasio generalista), por si sirve de referencia
@@ -92,6 +99,31 @@ mensaje escrito. Para un botón nuevo:
 `▲▲ FIN casos editables`. Ahora son ejemplos coherentes con el avatar (enfermero con guardias y
 muscle-up en 4 meses, madre de dos con su primera dominada en 11 semanas, autónomo con el hombro
 tocado). **Sustituir por casos reales antes de publicar.**
+
+**Actualizar las reseñas (landing 4)** — están en `data/resenas.json`, no en el HTML. La página lo
+lee al cargar (`js/l4-resenas.js`) y repinta el carrusel, la nota media de la sección **y el badge
+del hero**. Para añadir una reseña nueva basta con meter un objeto más en el array; no se toca ni
+HTML ni CSS:
+
+```json
+{
+  "nota": 5.0,
+  "total": 62,
+  "url": "https://…",         // enlace de «Verlas todas en Google»
+  "resenas": [
+    { "autor": "Nombre Apellido", "estrellas": 5, "fecha": "hace 2 meses", "texto": "Texto literal de la reseña." }
+  ]
+}
+```
+
+Las tarjetas que hay escritas dentro de `l4.html` son solo **respaldo**: se ven si el JSON falla o
+si se abre el archivo con `file://` (ahí `fetch` está bloqueado). Si se editan las reseñas, conviene
+actualizar también ese respaldo o dejarlo con dos o tres.
+
+No es automático a propósito: se descartó tirar de la API de Google (Places solo devuelve 5 reseñas
+y pide facturación; la de perfil de empresa exige OAuth de propietario) y los widgets de terceros
+imponen su diseño. Si algún día se quiere automatizar, basta con un script que reescriba este mismo
+JSON: la página no necesita ningún cambio.
 
 **Colores** — bloque `:root` de cada CSS, idéntico en las tres:
 
