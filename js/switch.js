@@ -3,7 +3,8 @@
   const OPCIONES = [
     { href: 'l1.html', n: '1', t: 'El objetivo' },
     { href: 'l2.html', n: '2', t: 'Tu tiempo' },
-    { href: 'l3.html', n: '3', t: 'Tu nivel' }
+    { href: 'l3.html', n: '3', t: 'Tu nivel' },
+    { href: 'l4.html', n: '4', t: 'Autoridad' }
   ];
   const actual = location.pathname.split('/').pop() || 'index.html';
 

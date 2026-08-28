@@ -20,6 +20,20 @@ rojo de marca `#D62424`, Bebas + Barlow). Cambia el ángulo y el ritmo de la pá
 | **1** | `l1.html` | El objetivo | Editorial: titular enorme, foto a todo ancho, bloque rojo | Ruta por fases hasta el muscle-up, con plazos reales |
 | **2** | `l2.html` | El tiempo | Tarjetas redondeadas, cercana | La semana dibujada hueco a hueco + selector que escribe el WhatsApp por ti |
 | **3** | `l3.html` | El diagnóstico | Tipo informe: tarjetas blancas, etiquetas monoespaciadas | Test de nivel en 30 s (N1-N5) con resultado y WhatsApp prerrellenado |
+| **4** | `l4.html` | La autoridad | Hero centrado tipo coaching + bloques oscuros | Estructura de `kingofweighted.com`: promesa + prueba social, entrenador, test, 6 casos en foto y metodología |
+
+**Landing 4** parte de una copia de la 1 (mismo menú, footer, FAQ y cierre) y cambia el cuerpo:
+
+1. **Hero a dos columnas**: a la izquierda logo, promesa («fuerte y sin dolor en menos de 6 meses»),
+   CTA y badge de reseñas; a la derecha foto vertical.
+2. **Quién te entrena**: Juan Enguídanos, 2× campeón de España de Streetlifting, a dos columnas
+   con foto y credenciales.
+3. **Test de entrenamiento** (reutiliza `js/l3-test.js`, sobre bloque oscuro).
+4. **Seis casos de éxito** en tarjetas-foto: marca grande, antes → ahora y cita que aparece al pasar el ratón.
+5. **Metodología** de calistenia en 6 pilares + bloque «lo que no vas a encontrar / lo que sí».
+
+⚠️ En la 4 quedan **placeholders entre corchetes** (`[X] años entrenando`) y el número de reseñas
+del badge del hero, marcados con comentarios `▼▼ EDITA AQUÍ`. Rellenarlos antes de publicar.
 
 **Nota sobre el avatar**: las tres están escritas para alguien de 30-50 años con trabajo y cargas
 familiares, pero **en ningún sitio se dice la edad**. Se transmite por contexto (guardias, hijos,
@@ -40,11 +54,11 @@ python3 -m http.server 8765
 
 ```
 index.html            Selector temporal de versiones
-l1.html l2.html l3.html
+l1.html l2.html l3.html l4.html
 css/fonts.css         Fuentes autoalojadas (compartidas)
-css/l1.css l2.css l3.css
+css/l1.css l2.css l3.css l4.css
 js/common.js          WhatsApp declarativo, reveal, menú móvil, contadores
-js/l3-test.js         Lógica del test de nivel de la landing 3
+js/l3-test.js         Lógica del test de nivel (landings 3 y 4)
 js/switch.js          Selector flotante de versiones (TEMPORAL)
 assets/               Fotos, logo y fuentes
 old-generalista.html  Versión anterior (enfoque gimnasio generalista), por si sirve de referencia
