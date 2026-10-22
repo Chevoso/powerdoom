@@ -15,6 +15,11 @@
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/l4.css">
 <script>document.documentElement.className='js'</script>
+
+<style id="test-css">
+  .q__back{background:none;border:0;color:var(--ink-s);font:600 .82rem/1 'Barlow',sans-serif;cursor:pointer;margin-top:.9rem;padding:0;text-decoration:underline}
+  #r-mol:empty{display:none}
+</style>
 </head>
 <body>
 
@@ -65,7 +70,7 @@
    </div>
 
    <figure class="hero__fig">
-     <img src="assets/img/gallery/m1.webp" alt="Entrenamiento de fuerza con el propio peso en PowerDoom Albacete" width="1600" height="1067" fetchpriority="high" decoding="async">
+     <img src="assets/img/fotos/hero.webp" style="object-position:50% 12%" alt="Alumno haciendo un muscle up con el entrenador al lado en PowerDoom Albacete" width="1600" height="1067" fetchpriority="high" decoding="async">
    </figure>
   </div>
 </section>
@@ -79,29 +84,50 @@
 
 <!-- ══ 2 · QUIÉN TE ENTRENA ══ -->
 <section class="sec" id="entrenador">
+  <div class="wrap">
+    <header class="head reveal">
+      <p class="kicker">Quién te entrena</p>
+      <h2>Dos competidores <em>de nivel nacional</em></h2>
+      <p class="lead">En PowerDoom no te entrena alguien que se sabe la teoría. Te entrenan dos competidores, uno especialista en calistenia y otro en fuerza, que ya han hecho lo que te van a enseñar.</p>
+    </header>
+  </div>
   <div class="wrap coach">
     <div class="coach__txt reveal">
-      <p class="kicker">Quién te entrena</p>
-      <!-- ▼▼ EDITA AQUÍ: años de experiencia y nº de alumnos reales ▼▼ -->
-      <h2>Me llamo <em>Juan Enguídanos</em> y soy <em>2 veces campeón de España</em> de Streetlifting</h2>
-      <p>Lo que sé de tracción y de empuje lo he aprendido compitiendo al máximo nivel con mi propio peso. Y eso es exactamente lo que enseño aquí: ni clases dirigidas ni rutinas copiadas de internet.</p>
-      <p>Entreno a gente que trabaja, que tiene hijos y que llega con el hombro tocado o sin haber hecho una dominada en su vida, y la llevo hasta las habilidades que creía reservadas a otros: dominadas, fondos, front lever y muscle-up. Se nota en el detalle: en cómo se coloca tu escápula, en cuánto se avanza cada semana y en cuándo toca frenar para que no aparezca la molestia.</p>
+      <p class="kicker">Fundador · Creador de la metodología</p>
+      <h2>Juan Gason</h2>
+      <p>Soy campeón de España de streetlifting, que es calistenia con lastre: dominadas, fondos y muscle up con kilos colgados del cinturón de lastre. Muevo más de 20kg de lastre externo en muscle up.</p>
+      <p>El método de PowerDoom lo he construido con los atletas que entreno, en sala y online. He llevado a gente que no hacía una dominada hasta el muscle up, y a gente con los codos o el hombro tocados a volver a entrenar sin dolor.</p>
       <ul class="coach__creds">
-        <li>2× Campeón de España de Streetlifting</li>
-        <li>[X] años entrenando</li>
-        <li>Especialista en calistenia</li>
-        <li>Grupos reducidos</li>
+        <li>Campeón de España de streetlifting</li>
+        <li>+20kg en muscle up</li>
+        <li>Vicepresidente de Broken Bars Albacete</li>
       </ul>
-      <!-- ▲▲ FIN datos del entrenador ▲▲ -->
+    </div>
+    <figure class="coach__img reveal">
+      <img src="assets/img/fotos/coach-juan.webp" alt="Juan Gason corrigiendo un fondo en paralelas en PowerDoom" width="1067" height="1600" style="object-position:50% 30%" loading="lazy" decoding="async">
+      <figcaption class="coach__sig"><b>Juan Gason</b><span>Campeón de España de streetlifting · PowerDoom Albacete</span></figcaption>
+    </figure>
+  </div>
+  <div class="wrap coach" style="margin-top:clamp(2.4rem,5vw,4rem)">
+    <figure class="coach__img reveal">
+      <img src="assets/img/fotos/coach-angel.webp" alt="Ángel Fernández corrigiendo la posición del hombro de una alumna en PowerDoom" width="1067" height="1600" style="object-position:50% 30%" loading="lazy" decoding="async">
+      <figcaption class="coach__sig"><b>Ángel Fernández</b><span>Especialista en fuerza · PowerDoom Albacete</span></figcaption>
+    </figure>
+    <div class="coach__txt reveal">
+      <p class="kicker">Entrenador · Especialista en fuerza</p>
+      <h2>Ángel Fernández</h2>
+      <p>Es quien vas a tener al lado en la sala. Especialista en entrenamiento de fuerza y con un ojo clínico muy desarrollado.</p>
+      <p>Es lo que le ha llevado tan lejos siendo tan joven, y lo que da los mejores resultados a él y a sus alumnos. Y para quien diga que no se puede entrenar pesado y ser versátil: hace dominadas con 60kg colgados a repeticiones.</p>
+      <ul class="coach__creds">
+        <li>3.ª mejor sentadilla de España · 275kg</li>
+        <li>300kg en peso muerto</li>
+        <li>60kg a repeticiones en dominadas</li>
+      </ul>
       <div class="coach__cta">
         <a class="btn btn--red" data-wa="Hola 👋 Me gustaría hablar con el entrenador y reservar la sesión de prueba de calistenia.">Reservar sesión de prueba gratuita</a>
         <p class="micro">Te contestamos por WhatsApp normalmente en menos de 1 hora.</p>
       </div>
     </div>
-    <figure class="coach__img reveal">
-      <img src="assets/img/gallery/m3.webp" alt="Juan Enguídanos corrigiendo la técnica de un alumno en PowerDoom" width="1600" height="1067" loading="lazy" decoding="async">
-      <figcaption class="coach__sig"><b>Juan Enguídanos</b><span>2× Campeón de España de Streetlifting · PowerDoom Albacete</span></figcaption>
-    </figure>
   </div>
 </section>
 
@@ -110,59 +136,116 @@
   <div class="wrap test-grid">
     <div class="test-grid__txt reveal">
       <p class="kicker kicker--inv">Test de entrenamiento</p>
-      <h2>Antes de entrenar, <em>saber desde dónde partes</em></h2>
-      <p class="lead lead--inv">Tres preguntas, treinta segundos. Te devuelve tu nivel estimado (N1 a N5), qué significa y cuál es tu siguiente hito concreto. Es la misma escala que usamos dentro de la sala.</p>
+      <h2>¿Por qué no estás <em>avanzando?</em></h2>
+      <p class="lead lead--inv">Siete preguntas, un minuto. Te dice en qué punto estás, qué te ha frenado hasta ahora y cuál es tu siguiente paso según lo que quieres conseguir.</p>
+      <p class="lead lead--inv">Y si quieres, te mandamos por WhatsApp una rutina adaptada a tu nivel.</p>
       <ul class="pills">
-        <li>Cualquier punto de partida</li><li>Sin experiencia previa</li><li>Con molestias también</li>
+        <li>Sin experiencia previa</li><li>Con molestias también</li><li>Rutina de regalo</li>
       </ul>
     </div>
 
     <div class="test" id="test">
       <div class="test__head">
         <span class="mono">Test de nivel</span>
-        <span class="mono" id="t-step">1 / 3</span>
+        <span class="mono" id="t-step">1 / 7</span>
       </div>
 
       <form id="t-form">
-        <fieldset class="q is-on" data-q="1">
-          <legend>¿Puedes colgarte de una barra 20 segundos sin que te moleste nada?</legend>
+        <fieldset class="q is-on" data-k="obj">
+          <legend>¿Qué te gustaría conseguir?</legend>
           <div class="opts">
-            <button type="button" data-v="0">No, o me molesta el hombro</button>
-            <button type="button" data-v="1">Aguanto, pero con esfuerzo</button>
-            <button type="button" data-v="2">Sin problema</button>
+            <button type="button" data-v="mu" data-t="Muscle up">Mi primer muscle up</button>
+            <button type="button" data-v="doms" data-t="Dominadas">Hacer dominadas (o muchas más)</button>
+            <button type="button" data-v="pino" data-t="Pino">El pino</button>
+            <button type="button" data-v="fl" data-t="Front lever">Front lever y otras habilidades</button>
+            <button type="button" data-v="salud" data-t="Fuerza y salud">Ponerme fuerte y entrenar sin dolores</button>
           </div>
         </fieldset>
 
-        <fieldset class="q" data-q="2">
+        <fieldset class="q" data-k="doms">
           <legend>¿Cuántas dominadas estrictas haces hoy, sin impulso?</legend>
           <div class="opts">
-            <button type="button" data-v="0">Ninguna</button>
-            <button type="button" data-v="1">Entre 1 y 3</button>
-            <button type="button" data-v="2">Entre 4 y 8</button>
-            <button type="button" data-v="3">Más de 8</button>
+            <button type="button" data-v="0" data-t="0 (me cuesta colgarme)">Ninguna, y me cuesta aguantar colgado</button>
+            <button type="button" data-v="1" data-t="0 (aguanto colgado)">Ninguna, pero aguanto colgado</button>
+            <button type="button" data-v="2" data-t="1-3">Entre 1 y 3</button>
+            <button type="button" data-v="3" data-t="4-9">Entre 4 y 9</button>
+            <button type="button" data-v="4" data-t="10+">10 o más</button>
           </div>
+          <button type="button" class="q__back">← Anterior</button>
         </fieldset>
 
-        <fieldset class="q" data-q="3">
-          <legend>¿Y de esto, qué has hecho alguna vez?</legend>
+        <fieldset class="q" data-k="flex">
+          <legend>¿Y cuántas flexiones seguidas, bien hechas?</legend>
           <div class="opts">
-            <button type="button" data-v="0">Nada de lo de abajo</button>
-            <button type="button" data-v="1">Fondos en paralelas</button>
-            <button type="button" data-v="2">Dominadas con peso añadido</button>
-            <button type="button" data-v="3">Muscle-up (aunque sea con impulso)</button>
+            <button type="button" data-v="0" data-t="0 o con rodillas">Ninguna, o solo con rodillas</button>
+            <button type="button" data-v="1" data-t="1-10">Entre 1 y 10</button>
+            <button type="button" data-v="2" data-t="11-25">Entre 11 y 25</button>
+            <button type="button" data-v="3" data-t="+25">Más de 25</button>
           </div>
+          <button type="button" class="q__back">← Anterior</button>
+        </fieldset>
+
+        <fieldset class="q" data-k="freno">
+          <legend>¿Qué has probado hasta ahora?</legend>
+          <div class="opts">
+            <button type="button" data-v="gym" data-t="Gimnasio sin plan">Gimnasio por mi cuenta, sin plan</button>
+            <button type="button" data-v="clase" data-t="Entrenador o clases">Entrenador o clases en grupo</button>
+            <button type="button" data-v="yt" data-t="Rutinas de internet">Rutinas de YouTube o de internet</button>
+            <button type="button" data-v="estancado" data-t="Calistenia, estancado">Calistenia, pero llevo tiempo estancado</button>
+            <button type="button" data-v="cero" data-t="Nada, de cero">Nada, empiezo de cero</button>
+          </div>
+          <button type="button" class="q__back">← Anterior</button>
+        </fieldset>
+
+        <fieldset class="q" data-k="molestia">
+          <legend>¿Tienes alguna molestia al entrenar?</legend>
+          <div class="opts">
+            <button type="button" data-v="no" data-t="Ninguna">No, ninguna</button>
+            <button type="button" data-v="codo" data-t="Codo o muñeca">Codo o muñeca</button>
+            <button type="button" data-v="hombro" data-t="Hombro">Hombro</button>
+            <button type="button" data-v="espalda" data-t="Espalda baja">Espalda baja</button>
+          </div>
+          <button type="button" class="q__back">← Anterior</button>
+        </fieldset>
+
+        <fieldset class="q" data-k="dias">
+          <legend>¿Cuántos días a la semana podrías venir?</legend>
+          <div class="opts">
+            <button type="button" data-v="1" data-t="1 día">1 día</button>
+            <button type="button" data-v="2" data-t="2 días">2 días</button>
+            <button type="button" data-v="3" data-t="3 días">3 días</button>
+          </div>
+          <button type="button" class="q__back">← Anterior</button>
+        </fieldset>
+
+        <fieldset class="q" data-k="hora">
+          <legend>¿Cuándo te viene mejor entrenar?</legend>
+          <div class="opts">
+            <button type="button" data-v="m" data-t="Por la mañana">Por la mañana</button>
+            <button type="button" data-v="t" data-t="Por la tarde">Por la tarde</button>
+          </div>
+          <button type="button" class="q__back">← Anterior</button>
         </fieldset>
       </form>
 
       <div class="res" id="t-res" hidden>
-        <p class="mono">Tu punto de partida estimado</p>
-        <p class="res__lvl" id="r-lvl">N1</p>
-        <h3 id="r-title">Suspensión y base</h3>
+        <p class="mono">Tu punto de partida</p>
+        <h3 id="r-title" class="res__lvl" style="font-size:clamp(2.2rem,5vw,3.2rem)">Construir la base</h3>
         <p id="r-txt"></p>
-        <p class="res__next"><span class="mono">Siguiente hito</span><b id="r-next"></b></p>
-        <a class="btn btn--red btn--full" id="r-cta" href="#" target="_blank" rel="noopener">Confirmarlo en una sesión de prueba</a>
+        <p class="res__next"><span class="mono">Tu siguiente paso</span><b id="r-next"></b></p>
+        <p class="res__next"><span class="mono">Qué te ha frenado</span><span id="r-freno"></span></p>
+        <p class="res__next" id="r-mol-w"><span class="mono">Tu molestia</span><span id="r-mol"></span></p>
+        <div class="res__caso" style="background:var(--paper);border-radius:10px;padding:.9rem 1rem;margin:0 0 1.1rem">
+          <span class="mono">Alguien como tú</span>
+          <p style="margin:.35rem 0 .2rem"><b id="r-caso-n"></b></p>
+          <p id="r-caso-t" style="margin:0"></p>
+          <a id="r-caso-u" href="#" target="_blank" rel="noopener" style="font-weight:700;color:var(--red)">Ver su caso →</a>
+        </div>
+        <p class="res__next"><span class="mono">Tu rutina de regalo</span><b id="r-rutina"></b></p>
+        <p class="micro" style="margin-bottom:1rem">Con los días que puedes venir: <b id="r-tarifa"></b>. Si venís dos personas, cada una paga la sesión a 12,50€.</p>
+        <a class="btn btn--red btn--full" id="r-cta" href="#" target="_blank" rel="noopener">Quiero mi rutina y la clase de prueba</a>
         <button type="button" class="res__again" id="r-again">Repetir el test</button>
-        <p class="micro">Estimación orientativa. En la sesión de prueba se mide de verdad.</p>
+        <p class="micro">Te escribimos por WhatsApp con tu rutina. La clase de prueba es gratis y no te pedimos ningún dato de pago.</p>
       </div>
     </div>
   </div>
@@ -173,87 +256,87 @@
   <div class="wrap">
     <header class="head reveal">
       <p class="kicker">Casos de éxito</p>
-      <h2>Gente con trabajo, hijos <em>y la misma agenda que tú</em></h2>
-      <p class="lead">Seis puntos de partida distintos y seis planes distintos. Ninguno entrenó lo mismo que el de al lado.</p>
+      <h2>Resultados <em>reales</em></h2>
+      <p class="lead">Puntos de partida muy distintos: gente con los codos tocados, con más de 40 años, sin una dominada o estancada con años de gimnasio. Cada uno con su plan.</p>
     </header>
-
-    <!-- ▼▼ EDITA AQUÍ: casos reales (foto, marca, contexto, antes/ahora y cita) ▼▼
-         OJO: las fotos son de relleno (las únicas del repo con gente). Sustituir por
-         fotos verticales del alumno real de cada caso, a poder ser haciendo el ejercicio. -->
     <div class="casos">
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/m5.webp" alt="Javier entrenando en PowerDoom" width="1600" height="1067" style="object-position:68% 45%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Muscle-up</span><span class="caso__time">4 meses</span></div>
+        <div class="caso__ph"><img src="assets/img/fotos/caso-clara.webp" alt="Clara celebrando su primer muscle up en anillas" width="1067" height="1600" style="object-position:50% 35%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">Muscle up en anillas</span><span class="caso__time">38 días</span></div>
         <div class="caso__body">
-          <p class="caso__big">De 0 dominadas<br>al <em>muscle-up</em></p>
-          <p class="caso__who">Javier · Enfermero con guardias · padre de dos</p>
-          <p class="caso__ba"><b>0 dominadas</b><i>→</i><b>Muscle-up + 8 dominadas</b></p>
-          <p class="caso__q">«Entrenaba cuando podía y nunca sabía si lo hacía bien. Aquí me dijeron el primer día por dónde empezaba y qué tocaba cada semana.»</p>
+          <p class="caso__big">Su primer<br><em>muscle up</em></p>
+          <p class="caso__who">Clara · 43 años</p>
+          <p class="caso__ba"><b>Medio año sin una dominada</b><i>→</i><b>2 muscle ups en anillas</b></p>
+          <p class="caso__q">Llegó con epicondilitis en los dos codos. 38 días después sacó el muscle up en anillas, y no una vez: dos en la misma sesión.</p>
+          <p class="caso__q"><a href="https://www.instagram.com/p/DcRY-n1DtL_/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Ver su caso completo →</a></p>
         </div>
         <span class="caso__bar"></span>
       </article>
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/g13.webp" alt="Marta entrenando tracción en PowerDoom" width="1400" height="933" style="object-position:45% 35%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Primera dominada</span><span class="caso__time">11 semanas</span></div>
+        <!-- PENDIENTE: Juan: meses que tardó Miguel + enlace a su testimonio. Cesión de imagen sin firmar. -->
+        <div class="caso__ph"><img src="assets/img/fotos/caso-miguel.webp" alt="Miguel haciendo un muscle up en PowerDoom" width="1080" height="1920" style="object-position:40% 30%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">Muscle up</span><span class="caso__time">[X] meses</span></div>
         <div class="caso__body">
-          <p class="caso__big">Su primera<br><em>dominada</em></p>
-          <p class="caso__who">Marta · Comercial · madre de dos · sin experiencia</p>
-          <p class="caso__ba"><b>No aguantaba colgada</b><i>→</i><b>4 dominadas estrictas</b></p>
-          <p class="caso__q">«Venía de clases dirigidas en las que era una más. Nunca pensé que podría colgarme de una barra y subir. El día que salió casi lloro.»</p>
+          <p class="caso__big">Vino a por<br>el <em>muscle up</em></p>
+          <p class="caso__who">Miguel · 45 años · enfermero · socio de PowerDoom</p>
+          <p class="caso__ba"><b>Dolor de espalda y calambres</b><i>→</i><b>Muscle up</b></p>
+          <p class="caso__q">Consiguió el muscle up, que era a lo que venía, y por el camino se le fueron el dolor de espalda y los calambres. «Yo he venido aquí porque quiero hacer muscle up. Y lo he conseguido de sobra.»</p>
         </div>
         <span class="caso__bar"></span>
       </article>
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/m2.webp" alt="Ana entrenando en PowerDoom" width="1600" height="1067" style="object-position:28% 45%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Anillas</span><span class="caso__time">7 meses</span></div>
+        <div class="caso__ph"><img src="assets/img/fotos/caso-chevi.webp" alt="Chevi antes y ahora" width="1080" height="1350" style="object-position:50% 50%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">Transformación</span><span class="caso__time">Muscle up</span></div>
         <div class="caso__body">
-          <p class="caso__big">De cero<br>a <em>anillas</em></p>
-          <p class="caso__who">Ana · Comercial con viajes · sin gimnasio antes</p>
-          <p class="caso__ba"><b>Sin entrenar nunca</b><i>→</i><b>Dominadas en anillas</b></p>
-          <p class="caso__q">«Viajo mucho y pensaba que era imposible. Me adaptaron el plan a las semanas que estoy fuera y aun así subo.»</p>
+          <p class="caso__big">Del sobrepeso<br>al <em>muscle up</em></p>
+          <p class="caso__who">Chevi</p>
+          <p class="caso__ba"><b>Sobrepeso y a disgusto con su físico</b><i>→</i><b>Realizado y con su muscle up</b></p>
+          <p class="caso__q">Tenía sobrepeso y no estaba a gusto con su físico. Hoy se siente realizado con lo que ve en el espejo y ha conseguido algo que antes veía muy lejos: el muscle up.</p>
+          <p class="caso__q"><a href="https://youtu.be/fTvJttNjKJI" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Ver su caso completo →</a></p>
         </div>
         <span class="caso__bar"></span>
       </article>
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/m4.webp" alt="Fernando entrenando sin molestias en PowerDoom" width="1600" height="1067" style="object-position:78% 45%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Hombro sin dolor</span><span class="caso__time">8 meses</span></div>
+        <div class="caso__ph"><img src="assets/img/fotos/caso-alberto.webp" alt="Alberto antes y ahora haciendo dominadas" width="1080" height="1350" style="object-position:50% 50%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">Dominadas</span><span class="caso__time">Policía Nacional</span></div>
         <div class="caso__body">
-          <p class="caso__big">Volvió a entrenar<br><em>sin dolor</em></p>
-          <p class="caso__who">Fernando · Autónomo · hombro tocado años</p>
-          <p class="caso__ba"><b>Dolor al elevar el brazo</b><i>→</i><b>10 dominadas, sin molestias</b></p>
-          <p class="caso__q">«Llegué con miedo a hacerme daño. Adaptaron todo a lo que podía hacer ese día. Hoy hago cosas que no hacía en mi mejor momento.»</p>
+          <p class="caso__big">De 0 a +15<br><em>estrictas</em></p>
+          <p class="caso__who">Alberto · 27 años · opositor a Policía Nacional</p>
+          <p class="caso__ba"><b>Ni una sola dominada</b><i>→</i><b>Estrictas y con +25kg</b></p>
+          <p class="caso__q">Sus primeras dominadas eran con goma o a base de patadas, y en su oposición la dominada puntúa. Trabaja por las mañanas y entrena alrededor del turno. Hoy hace más de 15 dominadas estrictas seguidas y dominadas con más de 25kg de lastre.</p>
         </div>
         <span class="caso__bar"></span>
       </article>
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/m5.webp" alt="Óscar entrenando en PowerDoom" width="1600" height="1067" style="object-position:30% 50%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Transición</span><span class="caso__time">6 meses</span></div>
+        <!-- PENDIENTE: Caso 5 por elegir (mejor socio presencial). Foto de relleno. -->
+        <div class="caso__ph"><img src="assets/img/fotos/relleno-anillas.webp" alt="Alumno entrenando en anillas en PowerDoom" width="1067" height="1600" style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">[Movimiento]</span><span class="caso__time">[Tiempo]</span></div>
         <div class="caso__body">
-          <p class="caso__big">Del N2<br>al <em>N4</em></p>
-          <p class="caso__who">Óscar · Docente · venía de clases dirigidas</p>
-          <p class="caso__ba"><b>2 dominadas asistidas</b><i>→</i><b>Transición completa</b></p>
-          <p class="caso__q">«Por primera vez sé en qué estoy trabajando y por qué. Ya no entreno a ver qué sale.»</p>
+          <p class="caso__big">[Caso 5]</p>
+          <p class="caso__who">[Nombre · edad · perfil]</p>
+          <p class="caso__ba"><b>[Antes]</b><i>→</i><b>[Ahora]</b></p>
+          <p class="caso__q">[Dolor: qué le frenaba al llegar y qué ha conseguido.]</p>
         </div>
         <span class="caso__bar"></span>
       </article>
 
       <article class="caso reveal">
-        <div class="caso__ph"><img src="assets/img/gallery/m4.webp" alt="Rubén entrenando empuje en PowerDoom" width="1600" height="1067" style="object-position:10% 58%" loading="lazy" decoding="async"></div>
-        <div class="caso__top"><span class="caso__badge">Fondos y empuje</span><span class="caso__time">5 meses</span></div>
+        <!-- PENDIENTE: Caso 6 por elegir (mejor socio presencial). Foto de relleno. -->
+        <div class="caso__ph"><img src="assets/img/fotos/relleno-anillas-2.webp" alt="Alumna entrenando en anillas en PowerDoom" width="1067" height="1600" style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+        <div class="caso__top"><span class="caso__badge">[Movimiento]</span><span class="caso__time">[Tiempo]</span></div>
         <div class="caso__body">
-          <p class="caso__big">Fondos completos<br><em>y espalda quieta</em></p>
-          <p class="caso__who">Rubén · Oficina · 10 horas sentado al día</p>
-          <p class="caso__ba"><b>Molestias lumbares</b><i>→</i><b>12 fondos · sin dolor</b></p>
-          <p class="caso__q">«Entré por la espalda y me quedé por lo demás. Entrenar dos días bien planificados vale más que cinco a mi aire.»</p>
+          <p class="caso__big">[Caso 6]</p>
+          <p class="caso__who">[Nombre · edad · perfil]</p>
+          <p class="caso__ba"><b>[Antes]</b><i>→</i><b>[Ahora]</b></p>
+          <p class="caso__q">[Dolor: qué le frenaba al llegar y qué ha conseguido.]</p>
         </div>
         <span class="caso__bar"></span>
       </article>
-
     </div>
     <!-- ▲▲ FIN casos editables ▲▲ -->
 
@@ -269,46 +352,46 @@
   <div class="wrap">
     <header class="head reveal">
       <p class="kicker">Metodología</p>
-      <h2>Solo calistenia, <em>y hecha por fases</em></h2>
-      <p class="lead">Aquí no hay powerlifting, ni máquinas, ni clases genéricas. Todo el método está construido alrededor de una sola cosa: mover tu propio cuerpo mejor cada semana, sin pagarlo al día siguiente.</p>
+      <h2>Progresar <em>no es suerte</em></h2>
+      <p class="lead">Aquí no te dan una tabla y te dejan solo. Entrenas en grupo, pero cada persona lleva su propio plan, y todo lo que haces queda apuntado para saber qué te toca la semana siguiente.</p>
     </header>
 
     <div class="pilares">
       <article class="pilar reveal">
         <span class="pilar__n">01</span>
-        <h3>Se mide antes de tocar la barra</h3>
-        <p>Movilidad de hombro, control escapular, capacidad de tracción y de empuje. Tu nivel N1-N5 queda escrito, no es una impresión del entrenador.</p>
+        <h3>Se mide antes de entrenar</h3>
+        <p>En la clase de prueba vemos de dónde partes: tus flexiones, tu dominada, tus molestias y lo que quieres conseguir. De ahí sale tu punto de partida.</p>
         <p class="pilar__t">Valoración inicial</p>
       </article>
       <article class="pilar reveal">
         <span class="pilar__n">02</span>
-        <h3>Primero sostener, después traccionar</h3>
-        <p>El hombro que aguanta el muscle-up se construye colgado, no a base de intentos. Esta fase es la que evita la molestia crónica que trae casi todo el mundo.</p>
-        <p class="pilar__t">Base de suspensión</p>
+        <h3>Máximo 4 por grupo</h3>
+        <p>Compartes sala, pero no entrenamiento. Cada persona lleva su plan y va por su fase y a su ritmo.</p>
+        <p class="pilar__t">Sesiones individualizadas</p>
       </article>
       <article class="pilar reveal">
         <span class="pilar__n">03</span>
-        <h3>Progresiones, no repeticiones</h3>
-        <p>Asistencias graduadas, negativas e isométricos con un criterio de salto claro. Cada ejercicio tiene un paso anterior y uno siguiente; nunca se entrena «a ver si sale».</p>
-        <p class="pilar__t">Tracción y empuje</p>
+        <h3>Todo queda apuntado</h3>
+        <p>Desde el primer día apuntamos tus pesos, tus repeticiones y cómo te han salido. Así cada semana sabemos si toca subir, mantener o cambiar algo, sin ir a ojo.</p>
+        <p class="pilar__t">Registro del progreso</p>
       </article>
       <article class="pilar reveal">
         <span class="pilar__n">04</span>
-        <h3>La carga se dosifica</h3>
-        <p>Volumen e intensidad suben de forma escalonada según cuántos días puedes venir y cómo has llegado esa semana. Si un día no puedes, no se rompe nada.</p>
-        <p class="pilar__t">Gestión de la carga</p>
+        <h3>La sesión se adapta al día</h3>
+        <p>Si llegas cansado, con una molestia o con el día torcido, se ajusta en el momento. Cada persona recibe al menos una corrección propia en cada clase.</p>
+        <p class="pilar__t">Ajuste en cada sesión</p>
       </article>
       <article class="pilar reveal">
         <span class="pilar__n">05</span>
-        <h3>Alguien te mira cada serie</h3>
-        <p>Grupos reducidos: la corrección llega en el momento, no al final de la clase. En calistenia un detalle de colocación cambia el ejercicio entero.</p>
-        <p class="pilar__t">Técnica corregida</p>
+        <h3>Progresiones con criterio</h3>
+        <p>Asistencias con goma, negativas e isométricos. Cada ejercicio tiene un paso anterior y uno siguiente, y se sube cuando el anterior está dominado.</p>
+        <p class="pilar__t">Tracción y empuje</p>
       </article>
       <article class="pilar reveal">
         <span class="pilar__n">06</span>
-        <h3>Se revisa cada pocas semanas</h3>
-        <p>Vuelves a pasar el criterio de tu nivel. Si se cumple, subes; si no, se ajusta el plan. Sabes en qué has mejorado porque está anotado.</p>
-        <p class="pilar__t">Revisión y registro</p>
+        <h3>Calistenia y fuerza en la misma sala</h3>
+        <p>Barra, anillas y fondera. Y también cinturón de lastre, discos calibrados, barras de powerlifting y barras especiales. Cuando tu peso corporal se te queda corto, se añade lastre.</p>
+        <p class="pilar__t">Material</p>
       </article>
     </div>
 
@@ -316,19 +399,19 @@
       <div>
         <h3>Lo que no vas a encontrar</h3>
         <ul class="solo__no">
-          <li>Clases de treinta personas repitiendo lo mismo.</li>
-          <li>Máquinas, barras olímpicas ni trabajo de powerlifting.</li>
-          <li>Rutinas genéricas copiadas de internet.</li>
-          <li>Entrenar «a ver qué sale» y medir por sensaciones.</li>
+          <li>Clases de treinta personas haciendo todas lo mismo.</li>
+          <li>Una rutina que te dan el primer día y no se vuelve a tocar.</li>
+          <li>Entrenar sin apuntar nada y medir por sensaciones.</li>
+          <li>Que nadie te corrija hasta que ya te has hecho daño.</li>
         </ul>
       </div>
       <div>
         <h3>Lo que sí</h3>
         <ul class="solo__si">
-          <li>Calistenia y solo calistenia, de N1 a muscle-up.</li>
-          <li>Tu progresión, no la del grupo: en la misma sesión cada uno hace lo suyo.</li>
-          <li>Un criterio objetivo para subir de nivel.</li>
-          <li>Un plan que cuenta con tu trabajo, tus hijos y tu hombro.</li>
+          <li>Cada uno con su plan: en la misma sesión, cada persona hace lo suyo.</li>
+          <li>Un entrenador encima de cada repetición.</li>
+          <li>Saber qué has mejorado, porque está apuntado.</li>
+          <li>Un plan que cuenta con tu trabajo, tus días libres y tus molestias.</li>
         </ul>
       </div>
     </div>
@@ -346,7 +429,7 @@
     <ol class="pasos">
       <li class="reveal"><b>1</b><h3>Valoración</h3><p>Hombro, escápula, tracción, empuje y core. Diez minutos que explican por qué te has atascado.</p></li>
       <li class="reveal"><b>2</b><h3>Entrenas</h3><p>Una sesión completa adaptada a lo que acabamos de ver. Sudas y te vas con la sensación de haber entrenado.</p></li>
-      <li class="reveal"><b>3</b><h3>Diagnóstico</h3><p>Tu nivel (N1-N5), qué toca trabajar primero y en cuánto tiempo es razonable esperar el siguiente hito.</p></li>
+      <li class="reveal"><b>3</b><h3>Diagnóstico</h3><p>Tu punto de partida, qué toca trabajar primero y en cuánto tiempo es razonable esperar el siguiente hito.</p></li>
     </ol>
     <div class="cta-final reveal">
       <a class="btn btn--red btn--lg" data-wa="Hola 👋 Quiero reservar la sesión de prueba de calistenia. ¿Qué días tenéis disponibles?">Reservar mi sesión de prueba</a>
@@ -441,12 +524,14 @@
   <div class="wrap wrap--n">
     <header class="head reveal"><p class="kicker">Dudas</p><h2>Lo que <em>siempre</em> nos preguntáis</h2></header>
     <div class="faq">
-      <details class="reveal"><summary>Nunca he hecho una dominada en mi vida. ¿Esto es para mí?</summary><p>Sí, es el punto de partida más habitual. Se empieza por sostener tu peso sin molestias y se sube desde ahí, con progresiones medidas.</p></details>
-      <details class="reveal"><summary>¿Cuántos días a la semana necesito?</summary><p>Con dos se progresa. Con tres se progresa bastante más rápido. No hace falta más, y si un día no puedes venir no se rompe nada.</p></details>
-      <details class="reveal"><summary>Tengo el hombro tocado o la espalda delicada.</summary><p>Nos lo cuentas en la sesión de prueba y se adapta el plan. Buena parte del trabajo inicial es precisamente devolver estabilidad al hombro y a la zona media.</p></details>
-      <details class="reveal"><summary>Me sobran unos kilos. ¿No es peor para la calistenia?</summary><p>Se entrena igual, con progresiones que descargan parte del peso mientras la fuerza sube. Y el trabajo de fuerza es de lo que mejor funciona para cambiar la composición corporal.</p></details>
-      <details class="reveal"><summary>¿El test de nivel es fiable?</summary><p>Es una estimación para orientarte. El nivel real se mide en persona: hay cosas —control escapular, rango, compensaciones— que no se ven en tres preguntas.</p></details>
-      <details class="reveal"><summary>¿La sesión de prueba tiene coste o compromiso?</summary><p>Ninguno de los dos. Vienes, entrenas, te decimos tu punto de partida y decides tú.</p></details>
+      <details class="reveal"><summary>Nunca he hecho una dominada. ¿Esto es para mí?</summary><p>Sí, es el punto de partida más habitual. Se empieza con progresiones (colgarte, negativas, asistencias con goma) y se sube desde ahí. Alberto llegó sin hacer ni una y hoy hace más de 15 estrictas seguidas.</p></details>
+      <details class="reveal"><summary>¿Tengo edad para esto?</summary><p>Clara sacó su primer muscle up con 43 años y Miguel con 45. Lo que cambia con la edad es cómo se dosifica la carga, y eso lo decidimos nosotros por ti.</p></details>
+      <details class="reveal"><summary>Tengo una molestia en el hombro, el codo o la espalda.</summary><p>Nos lo cuentas en la clase de prueba y lo tenemos en cuenta en tu plan desde el primer día. Si una sesión te molesta algo, se cambia el ejercicio en el momento.</p></details>
+      <details class="reveal"><summary>¿Cuántos días tengo que venir y cuánto cuesta?</summary><p>Eliges tú: 1 día a la semana son 80€ al mes, 2 días 120€ y 3 días 180€. Con dos días ya se progresa bien.</p></details>
+      <details class="reveal"><summary>¿Puedo venir con mi pareja o con un amigo?</summary><p>Sí, y sale más barato. Si os apuntáis dos o tres personas, cada una paga la sesión a 12,50€: 100€ al mes con 2 días y 150€ con 3.</p></details>
+      <details class="reveal"><summary>¿Y si un mes no puedo venir todos los días?</summary><p>Las sesiones de cada mes se usan dentro de ese mes. Si surge algo serio, como una lesión o un viaje largo, avísanos antes y buscamos la manera de recuperarlas.</p></details>
+      <details class="reveal"><summary>¿Lleváis también la nutrición?</summary><p>Sí. Hay tarifas de entrenamiento con plan de nutrición incluido: 130€ al mes con 1 día, 170€ con 2 y 230€ con 3.</p></details>
+      <details class="reveal"><summary>¿La clase de prueba tiene coste o compromiso?</summary><p>Ninguno de los dos. Vienes, entrenas, te decimos de dónde partes y decides tú. No te pedimos ningún dato de pago.</p></details>
     </div>
   </div>
 </section>
@@ -477,8 +562,9 @@
 </a>
 
 <script src="js/common.js" defer></script>
-<script src="js/l3-test.js" defer></script>
+<script src="js/l4-test.js" defer></script>
 <script src="js/l4-resenas.js" defer></script>
 <script src="js/switch.js" defer></script>
+
 </body>
 </html>

@@ -26,8 +26,8 @@ rojo de marca `#D62424`, Bebas + Barlow). Cambia el ángulo y el ritmo de la pá
 
 1. **Hero a dos columnas**: a la izquierda logo, promesa («fuerte y sin dolor en menos de 6 meses»),
    CTA y badge de reseñas; a la derecha foto vertical.
-2. **Quién te entrena**: Juan Enguídanos, 2× campeón de España de Streetlifting, a dos columnas
-   con foto y credenciales.
+2. **Quién te entrena**: Juan Gason (fundador) y Ángel Fernández (entrenador), en filas alternas
+   con foto y credenciales. Textos y fotos del cliente.
 3. **Test de entrenamiento** (reutiliza `js/l3-test.js`, sobre bloque oscuro).
 4. **Seis casos de éxito** en tarjetas-foto: marca grande, antes → ahora y cita que aparece al pasar el ratón.
 5. **Metodología** de calistenia en 6 pilares + bloque «lo que no vas a encontrar / lo que sí».
@@ -36,7 +36,10 @@ Además, entre la sesión de prueba y las FAQ hay un **carrusel horizontal de re
 (scroll con snap) con la nota media y el enlace a Google. Son **reseñas reales** de la ficha de
 Google (5,0 de 62). Ver «Actualizar las reseñas» más abajo.
 
-⚠️ En la 4 solo queda un placeholder: `[X] años entrenando` en la sección del entrenador. El enlace
+⚠️ En la 4 quedan placeholders del cliente: `[X] meses` en dos casos y los casos 5 y 6 enteros.
+Fotos originales del cliente en `assets/img/fotos/` (desde su Drive, «03 · Web»). Clara y Chevi son
+fotogramas de vídeo; los casos 5 y 6 llevan foto de relleno. Pendiente de Juan: meses de Miguel y su
+cesión de imagen, permiso de Chevi, y elegir los casos 5 y 6. El test (7 preguntas) vive en `js/l4-test.js`. El enlace
 «Verlas todas en Google» apunta a una búsqueda genérica: conviene cambiarlo por la URL directa de
 la ficha. Las fotos siguen siendo de relleno (ver más abajo).
 
