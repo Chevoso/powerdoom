@@ -1,4 +1,7 @@
-# PowerDoom · Landings de calistenia (3 versiones a comparar)
+# PowerDoom · Landing de calistenia
+
+Una sola página (`index.html`) para el negocio de calistenia de PowerDoom en Albacete. Objetivo:
+que la persona reserve la **sesión de prueba** por WhatsApp.
 
 Tres landings distintas para el **mismo** negocio, el mismo avatar y el mismo objetivo:
 que la persona reserve la **sesión de prueba** por WhatsApp.
@@ -10,46 +13,18 @@ que la persona reserve la **sesión de prueba** por WhatsApp.
   no saber si progresa). No se compara con otros gimnasios ni se enseña el material del centro.
 - **CTA único**: «haz tu sesión de prueba y te decimos desde qué nivel partes».
 
-## Las tres versiones
+## La página
 
-Las tres comparten la misma base visual **light** de la landing 2 (papel `#F4F0E9`, tinta `#14130F`,
-rojo de marca `#D62424`, Bebas + Barlow). Cambia el ángulo y el ritmo de la página, no la marca.
+Estructura de `kingofweighted.com`, ajustada por el cliente (Juan) en su versión editable del Drive
+(«03 · Web»):
 
-| | Archivo | Ángulo | Estética | Gancho diferencial |
-|---|---|---|---|---|
-| **1** | `l1.html` | El objetivo | Editorial: titular enorme, foto a todo ancho, bloque rojo | Ruta por fases hasta el muscle-up, con plazos reales |
-| **2** | `l2.html` | El tiempo | Tarjetas redondeadas, cercana | La semana dibujada hueco a hueco + selector que escribe el WhatsApp por ti |
-| **3** | `l3.html` | El diagnóstico | Tipo informe: tarjetas blancas, etiquetas monoespaciadas | Test de nivel en 30 s (N1-N5) con resultado y WhatsApp prerrellenado |
-| **4** | `l4.html` | La autoridad | Hero centrado tipo coaching + bloques oscuros | Estructura de `kingofweighted.com`: promesa + prueba social, entrenador, test, 6 casos en foto y metodología |
-
-**Landing 4** parte de una copia de la 1 (mismo menú, footer, FAQ y cierre) y cambia el cuerpo:
-
-1. **Hero a dos columnas**: a la izquierda logo, promesa («fuerte y sin dolor en menos de 6 meses»),
-   CTA y badge de reseñas; a la derecha foto vertical.
-2. **Quién te entrena**: Juan Gason (fundador) y Ángel Fernández (entrenador), en filas alternas
-   con foto y credenciales. Textos y fotos del cliente.
-3. **Test de entrenamiento** (reutiliza `js/l3-test.js`, sobre bloque oscuro).
-4. **Seis casos de éxito** en tarjetas-foto: marca grande, antes → ahora y cita que aparece al pasar el ratón.
-5. **Metodología** de calistenia en 6 pilares + bloque «lo que no vas a encontrar / lo que sí».
-
-Además, entre la sesión de prueba y las FAQ hay un **carrusel horizontal de reseñas a todo el ancho**
-(scroll con snap) con la nota media y el enlace a Google. Son **reseñas reales** de la ficha de
-Google (5,0 de 62). Ver «Actualizar las reseñas» más abajo.
-
-⚠️ En la 4 quedan placeholders del cliente: `[X] meses` en dos casos y los casos 5 y 6 enteros.
-Fotos originales del cliente en `assets/img/fotos/` (desde su Drive, «03 · Web»). Clara y Chevi son
-fotogramas de vídeo; los casos 5 y 6 llevan foto de relleno. Pendiente de Juan: meses de Miguel y su
-cesión de imagen, permiso de Chevi, y elegir los casos 5 y 6. El test (7 preguntas) vive en `js/l4-test.js`. El enlace
-«Verlas todas en Google» apunta a una búsqueda genérica: conviene cambiarlo por la URL directa de
-la ficha. Las fotos siguen siendo de relleno (ver más abajo).
-
-**Nota sobre el avatar**: las tres están escritas para alguien de 30-50 años con trabajo y cargas
-familiares, pero **en ningún sitio se dice la edad**. Se transmite por contexto (guardias, hijos,
-«el tiempo que te queda es sagrado») y por frases del tipo «cualquier punto de partida». Si se
-edita el copy, mantener ese criterio.
-
-`index.html` es una **página temporal de comparación** con las tres. Además, dentro de cada landing
-hay un **selector flotante abajo a la izquierda** para saltar entre versiones (1 / 2 / 3).
+1. **Hero a dos columnas**: logo, promesa («fuerte y sin dolor en menos de 6 meses»), CTA y badge de
+   reseñas; a la derecha foto de muscle-up con el entrenador.
+2. **Quién te entrena**: Juan Gason (fundador) y Ángel Fernández (entrenador en sala).
+3. **Test de entrenamiento** de 7 preguntas (`js/l4-test.js`): punto de partida, qué le ha frenado,
+   caso real parecido, tarifa según días y rutina de regalo, todo prerrellenado en WhatsApp.
+4. **Seis casos de éxito** en tarjetas-foto.
+5. **Metodología**, sesión de prueba, **carrusel de reseñas** reales de Google, FAQ y cierre.
 
 ## Ver en local
 
@@ -61,27 +36,23 @@ python3 -m http.server 8765
 ## Archivos
 
 ```
-index.html            Selector temporal de versiones
-l1.html l2.html l3.html l4.html
-css/fonts.css         Fuentes autoalojadas (compartidas)
-css/l1.css l2.css l3.css l4.css
+index.html            La landing
+css/fonts.css         Fuentes autoalojadas
+css/l4.css            Estilos de la landing
 js/common.js          WhatsApp declarativo, reveal, menú móvil, contadores
-js/l3-test.js         Lógica del test de nivel (landings 3 y 4)
-js/l4-resenas.js      Pinta el carrusel de reseñas de la landing 4 desde el JSON
+js/l4-test.js         Test de nivel (7 preguntas)
+js/l4-resenas.js      Pinta el carrusel de reseñas desde el JSON
 data/resenas.json     Reseñas de Google + nota media (editable a mano)
-js/switch.js          Selector flotante de versiones (TEMPORAL)
-assets/               Fotos, logo y fuentes
-old-generalista.html  Versión anterior (enfoque gimnasio generalista), por si sirve de referencia
+assets/img/fotos/     Fotos originales del cliente
+assets/img/icon/      Logo e iconos
 ```
 
-## Al elegir la versión definitiva
+## Antes de abrirla a Google
 
-1. Borrar `js/switch.js` y su `<script src="js/switch.js" defer>` de la landing elegida.
-2. Renombrar esa landing a `index.html` (y borrar las otras dos + `old-generalista.html`).
-3. Quitar `<meta name="robots" content="noindex,nofollow">` del `<head>`: ahora mismo las tres
-   están bloqueadas para Google a propósito, para no indexar borradores duplicados.
-4. Añadir `canonical`, `og:url` y datos estructurados con el dominio final, y actualizar
-   `sitemap.xml` y `robots.txt`.
+1. Quitar `<meta name="robots" content="noindex,nofollow">` del `<head>`: sigue bloqueada a propósito
+   mientras haya pendientes.
+2. Añadir `canonical`, `og:url`, `og:image` y datos estructurados con el dominio final, y revisar
+   `sitemap.xml` y `robots.txt` (apuntan a `powerdoom.com`).
 
 ## Personalizar
 
@@ -98,12 +69,10 @@ mensaje escrito. Para un botón nuevo:
 <a class="btn btn--red" data-wa="Hola 👋 Quiero...">Texto del botón</a>
 ```
 
-**Casos de éxito** — en las tres landings están entre los comentarios `▼▼ EDITA AQUÍ` y
-`▲▲ FIN casos editables`. Ahora son ejemplos coherentes con el avatar (enfermero con guardias y
-muscle-up en 4 meses, madre de dos con su primera dominada en 11 semanas, autónomo con el hombro
-tocado). **Sustituir por casos reales antes de publicar.**
+**Casos de éxito** — en `index.html`, entre los comentarios `▼▼ EDITA AQUÍ` y `▲▲ FIN casos editables`.
+Clara, Miguel, Chevi y Alberto son reales; los casos 5 y 6 están por elegir (foto de relleno).
 
-**Actualizar las reseñas (landing 4)** — están en `data/resenas.json`, no en el HTML. La página lo
+**Actualizar las reseñas** — están en `data/resenas.json`, no en el HTML. La página lo
 lee al cargar (`js/l4-resenas.js`) y repinta el carrusel, la nota media de la sección **y el badge
 del hero**. Para añadir una reseña nueva basta con meter un objeto más en el array; no se toca ni
 HTML ni CSS:
@@ -119,7 +88,7 @@ HTML ni CSS:
 }
 ```
 
-Las tarjetas que hay escritas dentro de `l4.html` son solo **respaldo**: se ven si el JSON falla o
+Las tarjetas que hay escritas dentro de `index.html` son solo **respaldo**: se ven si el JSON falla o
 si se abre el archivo con `file://` (ahí `fetch` está bloqueado). Si se editan las reseñas, conviene
 actualizar también ese respaldo o dejarlo con dos o tres.
 
@@ -128,7 +97,7 @@ y pide facturación; la de perfil de empresa exige OAuth de propietario) y los w
 imponen su diseño. Si algún día se quiere automatizar, basta con un script que reescriba este mismo
 JSON: la página no necesita ningún cambio.
 
-**Colores** — bloque `:root` de cada CSS, idéntico en las tres:
+**Colores** — bloque `:root` de `css/l4.css`:
 
 ```css
 --red:#D62424;   /* rojo de marca */
@@ -140,10 +109,8 @@ JSON: la página no necesita ningún cambio.
 
 ## Pendiente / a tener en cuenta
 
-- **Faltan fotos de calistenia.** Las imágenes actuales vienen de la web antigua y son casi todas
-  de barra y material de fuerza. Para que la landing definitiva sea creíble hacen falta fotos de
-  gente entrenando dominadas, fondos, anillas y muscle-ups, y a poder ser del perfil del avatar
-  (30-50 años), no solo de veinteañeros.
-- **Horarios de los grupos**: se mencionan pero no se concretan. Si hay horarios fijos, ponerlos.
-- **Precio**: ninguna de las tres muestra precio a propósito (el objetivo es la sesión de prueba).
-  Si prefieres mostrarlo, se añade una sección.
+- **De Juan**: meses que tardó Miguel y su cesión de imagen firmada, permiso de Chevi para salir con
+  nombre, y elegir los casos 5 y 6.
+- Clara y Chevi son fotogramas de vídeo (baja resolución): si hay original mejor, sustituir.
+- El enlace «Verlas todas en Google» apunta a una búsqueda genérica: cambiarlo por la URL de la ficha.
+- **Horarios de los grupos**: se mencionan pero no se concretan.

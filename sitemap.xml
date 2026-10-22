@@ -3,16 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://powerdoom.com/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://powerdoom.com/assets/img/gallery/m1.webp</image:loc>
-      <image:title>Entrenamiento de powerlifting en PowerDoom Albacete</image:title>
+      <image:loc>https://powerdoom.com/assets/img/fotos/hero.webp</image:loc>
+      <image:title>Muscle up con el entrenador al lado en PowerDoom Albacete</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://powerdoom.com/assets/img/gallery/g3.webp</image:loc>
-      <image:title>Discos calibrados de competición en PowerDoom</image:title>
+      <image:loc>https://powerdoom.com/assets/img/fotos/coach-juan.webp</image:loc>
+      <image:title>Juan Gason corrigiendo un fondo en paralelas en PowerDoom</image:title>
     </image:image>
   </url>
 </urlset>
